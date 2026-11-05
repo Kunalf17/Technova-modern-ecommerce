@@ -1,192 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TechNova | Premium Electronics & Design</title>
-  
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-  
-  <!-- Custom Stylesheets -->
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/interactive.css">
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>TechNova — Considered Electronics</title>
+  <link href="css/style.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/interactive.css"/>
 </head>
 <body>
 
-  <!-- ==========================================
-       HEADER & NAVIGATION
-       ========================================== -->
-  <header>
-    <div class="container nav-container">
-      <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
-      <a href="index.html" class="logo">TECHNOVA</a>
-
-      <ul class="nav-links">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-
-      <div style="display: flex; gap: 10px; align-items: center;">
-        <button class="btn-reserve-nav cart-trigger" type="button">
-          Cart <span class="cart-count">0</span>
-        </button>
-      </div>
-    </div>
+  <header class="site-header">
+    <button aria-expanded="false" aria-label="Open navigation menu" class="menu-toggle" type="button">☰</button>
+    <a class="brand" href="index.html">
+      <span class="brand-mark">T</span><span>TECHNOVA</span>
+    </a>
+    <nav aria-label="Main navigation" class="nav">
+      <a class="active" href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="product-details.html">Spotlight</a>
+      <a href="offers.html">Offers</a>
+      <a href="about.html">About</a>
+    </nav>
+    <a class="pill" href="products.html">Shop now ↗</a>
+    <button aria-label="Open shopping cart" class="pill cart-trigger" type="button">
+      Cart <span class="cart-count">0</span>
+    </button>
   </header>
 
-  <!-- ==========================================
-       HERO SECTION
-       ========================================== -->
-  <section id="hero" class="hero">
-    <div class="hero-content">
-      <p class="hero-subtitle">Considered Hardware / 2026</p>
-      <h1 class="hero-title">Upgrade Your World</h1>
-      <p class="hero-description">Purposeful gadgets for the way you move, make, listen, and live. Premium materials, zero noise.</p>
-      <div class="hero-actions">
-        <a href="#products" class="btn-primary">Explore Products</a>
-        <a href="#about" class="btn-secondary">Our Philosophy</a>
+  <main>
+    <section class="container hero">
+      <div>
+        <div class="eyebrow">Independent electronics / 2026</div>
+        <h1>Upgrade<br/>Your World<br/><span>with TechNova.</span></h1>
+        <p>Purposeful gadgets for the way you move, make, listen and live. Curated hardware, honest prices, zero noise.</p>
+        <a class="button" href="products.html">Explore products ↗</a>
+      </div>
+      <div class="hero-art">
+        <div class="orbit"></div>
+        <img alt="Nova X1 smartphone" class="hero-product" src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&amp;fit=crop&amp;w=900&amp;q=85"/>
+        <span class="hero-tag">NOVA / 01</span>
+      </div>
+    </section>
+
+    <div class="ticker">
+      <div class="container ticker-inner">
+        <span>SELECT DEVICES</span><b>✦</b><span>NEW SIGNALS FOR EVERYDAY LIFE</span><b>✦</b><span>FREE SHIPPING OVER ₹2,000</span><b>✦</b>
       </div>
     </div>
-  </section>
 
-  <!-- ==========================================
-       PRODUCTS CATALOG SECTION
-       ========================================== -->
-  <section id="products" class="section-padding menu-section">
+    <section class="section container">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">01 / The edit</div>
+          <h2>Featured, not filtered.</h2>
+        </div>
+        <p>Four everyday essentials chosen for their feel, finish and future-proof performance.</p>
+      </div>
+
+      <div class="products-grid">
+        <article class="product-card">
+          <div class="product-image">
+            <img alt="Nova X1 phone" src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&amp;fit=crop&amp;w=900&amp;q=85"/>
+            <span class="badge">New arrival</span>
+          </div>
+          <div class="product-info">
+            <span class="tile-label">Mobile / 01</span>
+            <h3>Nova X1 / Flagship</h3>
+            <p>Pro-grade camera. Pocket-sized confidence.</p>
+            <span class="price">₹69,999</span>
+            <div class="product-actions">
+              <button class="button add-to-cart" data-name="Nova X1 / Flagship" data-price="69999" type="button">Add to cart +</button>
+              <button aria-label="Add Nova X1 to wishlist" class="wishlist-btn" data-name="Nova X1 / Flagship" title="Add to wishlist" type="button">♡</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image">
+            <img alt="CoreBook laptop" src="https://images.unsplash.com/photo-1496150458551-1403e1e9ba9b?auto=format&amp;fit=crop&amp;w=900&amp;q=85"/>
+            <span class="badge">Bestseller</span>
+          </div>
+          <div class="product-info">
+            <span class="tile-label">Work / Play</span>
+            <h3>CoreBook Air</h3>
+            <p>A light laptop built for deep focus and heavy tasks.</p>
+            <span class="price">₹84,990</span>
+            <div class="product-actions">
+              <button class="button add-to-cart" data-name="CoreBook Air" data-price="84990" type="button">Add to cart +</button>
+              <button aria-label="Add CoreBook Air to wishlist" class="wishlist-btn" data-name="CoreBook Air" title="Add to wishlist" type="button">♡</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image">
+            <img alt="Orbit headphones" src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&amp;fit=crop&amp;w=900&amp;q=85"/>
+            <span class="badge">Popular</span>
+          </div>
+          <div class="product-info">
+            <span class="tile-label">Listen closer</span>
+            <h3>Orbit ANC</h3>
+            <p>Active noise cancellation and acoustic precision.</p>
+            <span class="price">₹8,499</span>
+            <div class="product-actions">
+              <button class="button add-to-cart" data-name="Orbit ANC" data-price="8499" type="button">Add to cart +</button>
+              <button aria-label="Add Orbit ANC to wishlist" class="wishlist-btn" data-name="Orbit ANC" title="Add to wishlist" type="button">♡</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image">
+            <img alt="Pulse watch" src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&amp;fit=crop&amp;w=900&amp;q=85"/>
+            <span class="badge">New</span>
+          </div>
+          <div class="product-info">
+            <span class="tile-label">In motion</span>
+            <h3>Pulse Watch</h3>
+            <p>Health metrics tracking wrapped in sapphire glass.</p>
+            <span class="price">₹12,999</span>
+            <div class="product-actions">
+              <button class="button add-to-cart" data-name="Pulse Watch" data-price="12999" type="button">Add to cart +</button>
+              <button aria-label="Add Pulse Watch to wishlist" class="wishlist-btn" data-name="Pulse Watch" title="Add to wishlist" type="button">♡</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div style="margin-top:28px">
+        <a class="button" href="products.html">Browse all products ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
     <div class="container">
-      <div class="section-header">
-        <p class="section-subtitle">Curated Collection</p>
-        <h2 class="section-title">Featured Devices</h2>
-      </div>
-
-      <!-- Controls for JS Search & Filters -->
-      <div class="shop-toolbar" style="margin-bottom: 30px;">
-        <input type="search" id="product-search" placeholder="Search devices..." aria-label="Search products" style="padding: 12px; background: #14161d; border: 1px solid rgba(212, 175, 55, 0.2); color: #fff; border-radius: 6px;">
-        
-        <select id="category-filter" aria-label="Filter category" style="padding: 12px; background: #14161d; border: 1px solid rgba(212, 175, 55, 0.2); color: #fff; border-radius: 6px;">
-          <option value="all">All Categories</option>
-          <option value="mobile">Mobile</option>
-          <option value="computing">Computing</option>
-          <option value="audio">Audio</option>
-        </select>
-
-        <select id="price-sort" aria-label="Sort products" style="padding: 12px; background: #14161d; border: 1px solid rgba(212, 175, 55, 0.2); color: #fff; border-radius: 6px;">
-          <option value="default">Sort: Featured</option>
-          <option value="low-high">Price: Low to High</option>
-          <option value="high-low">Price: High to Low</option>
-        </select>
-      </div>
-
-      <!-- Products Grid -->
-      <div class="products-grid menu-grid">
-        
-        <!-- Product 1 -->
-        <article class="product-card menu-card starter">
-          <div class="menu-card-header">
-            <h3 class="dish-title">Nova X1 Flagship</h3>
-            <span class="dish-price price">₹69,999</span>
-          </div>
-          <p class="dish-desc tile-label">Mobile</p>
-          <p class="dish-desc">Pro-grade triple camera system with titanium finish and all-day battery life.</p>
-          <div class="product-actions" style="margin-top: 15px;">
-            <button class="button add-to-cart btn-primary" data-name="Nova X1 Flagship" data-price="69999">Add to Cart +</button>
-            <button class="wishlist-btn" data-name="Nova X1 Flagship" aria-label="Wishlist">♡</button>
-          </div>
-        </article>
-
-        <!-- Product 2 -->
-        <article class="product-card menu-card main">
-          <div class="menu-card-header">
-            <h3 class="dish-title">CoreBook Air</h3>
-            <span class="dish-price price">₹84,990</span>
-          </div>
-          <p class="dish-desc tile-label">Work / Play</p>
-          <p class="dish-desc">Ultra-thin laptop crafted for deep focus, long render sessions, and portable power.</p>
-          <div class="product-actions" style="margin-top: 15px;">
-            <button class="button add-to-cart btn-primary" data-name="CoreBook Air" data-price="84990">Add to Cart +</button>
-            <button class="wishlist-btn" data-name="CoreBook Air" aria-label="Wishlist">♡</button>
-          </div>
-        </article>
-
-        <!-- Product 3 -->
-        <article class="product-card menu-card special">
-          <div class="menu-card-header">
-            <h3 class="dish-title">Orbit ANC Headphones</h3>
-            <span class="dish-price price">₹8,499</span>
-          </div>
-          <p class="dish-desc tile-label">Listen closer</p>
-          <p class="dish-desc">Active noise cancellation, studio acoustics, and memory foam comfort.</p>
-          <div class="product-actions" style="margin-top: 15px;">
-            <button class="button add-to-cart btn-primary" data-name="Orbit ANC Headphones" data-price="8499">Add to Cart +</button>
-            <button class="wishlist-btn" data-name="Orbit ANC Headphones" aria-label="Wishlist">♡</button>
-          </div>
-        </article>
-
-        <!-- Product 4 -->
-        <article class="product-card menu-card dessert">
-          <div class="menu-card-header">
-            <h3 class="dish-title">Pulse Watch</h3>
-            <span class="dish-price price">₹12,999</span>
-          </div>
-          <p class="dish-desc tile-label">In motion</p>
-          <p class="dish-desc">Precision health tracking, sapphire glass display, and seamless sync.</p>
-          <div class="product-actions" style="margin-top: 15px;">
-            <button class="button add-to-cart btn-primary" data-name="Pulse Watch" data-price="12999">Add to Cart +</button>
-            <button class="wishlist-btn" data-name="Pulse Watch" aria-label="Wishlist">♡</button>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================
-       ABOUT SECTION
-       ========================================== -->
-  <section id="about" class="section-padding">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-image">
-          <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=800&q=80" alt="TechNova Philosophy">
+      <div class="footer-top">
+        <div>
+          <a class="brand" href="index.html"><span class="brand-mark">T</span><span>TECHNOVA</span></a>
+          <div class="footer-tagline">Considered technology for a connected life.</div>
         </div>
-        <div class="about-text">
-          <p class="section-subtitle">Our Philosophy</p>
-          <h2 class="section-title" style="margin-bottom: 20px;">Purposeful Tech. Zero Noise.</h2>
-          <p>At TechNova, we believe that everyday hardware should feel clear, considered, and human.</p>
-          <p>Every device in our store undergoes hands-on testing to ensure it simplifies your workflow without competing for your attention.</p>
+        <div class="footer-links">
+          <a href="products.html">Products</a>
+          <a href="offers.html">Offers</a>
+          <a href="about.html">About</a>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- ==========================================
-       FOOTER
-       ========================================== -->
-  <footer>
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-col">
-          <h4>TechNova</h4>
-          <p>Considered technology for a connected life.</p>
-        </div>
-        <div class="footer-col">
-          <h4>Support</h4>
-          <p>Mon - Sat: 10:00 AM - 6:00 PM</p>
-          <p>hello@technova.example</p>
-        </div>
-      </div>
-      <div class="copyright">
-        <p>&copy; 2026 TechNova Studio. All Rights Reserved.</p>
+      <div class="footer-bottom">
+        <span>© 2026 TechNova Studio</span>
+        <span class="mono">MADE FOR CURIOUS MINDS ↓</span>
       </div>
     </div>
   </footer>
 
-  <!-- Interactive JavaScript -->
   <script defer src="js/script.js"></script>
 </body>
 </html>
